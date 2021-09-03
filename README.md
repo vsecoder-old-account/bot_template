@@ -1,1 +1,1 @@
-# PythonBite
+# Bot template
