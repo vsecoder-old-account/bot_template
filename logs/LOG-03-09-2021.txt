@@ -1,0 +1,2 @@
+03-09-2021 20:19: - BOT:[INFO] - Bot starting
+03-09-2021 20:19: - BOT:[INFO] - Bot stoping

@@ -1,0 +1,134 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Panel</title>
+  <link href="../static/img/icon.png" rel="icon" type="image/png" />
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
+body {
+	margin-bottom: 23px;
+	white-space: normal !important;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1em;
+  font-weight: 700;
+  color: white;
+}
+
+body {
+  background-image: url('../static/img/1.png');
+  margin: 0;
+  white-space: pre;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background .2s;
+}
+
+.header {
+    width: auto;
+    height: 70px;
+    line-height: 35px;
+    background: rgb(0 0 0 / 24%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    border-bottom: 1px solid rgb(255 255 255 / 14%);
+    box-shadow: none;
+    padding-left: 10px;
+}
+
+span {
+  color: rgb(255 255 255 / 65%);
+}
+
+table {
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 15px;
+  background: rgb(0 0 0 / 24%);
+  border-collapse: collapse;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+b {
+  font-weight: bolder;
+}
+
+.container {
+  margin-top: 90px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bx {
+  font-size: 30px;
+}
+
+h3 {
+  width: 90%;
+  display: inline-block;
+}
+
+.tablehead {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+
+td, th {
+  text-align: left;
+  padding: 24px 14px;
+}
+
+th {
+  justify-content: center;
+}
+
+.user:hover {
+  background: rgb(0 0 0 / 25%);
+}
+
+@media screen and (max-width: 600px) {
+  h3 {
+    width: 80%;
+  }
+}
+
+</style>
+<div class="header">
+  <h2><a href="/"><b>Bot</b></a> <span>></span> Users </h2>
+</div>
+<div class="container">
+    <table>
+      <tr class="tablehead">
+        <th>ID</th>
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>data</th>
+        <th>Первый запуск</th>
+      </tr>
+      {% for user in users %}
+        <tr class="user" onclick="window.location.pathname = '/user/{{ user.id }}'">
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.fullname }}</td>
+            <td>{{ user.data }}</td>
+            <td>{{ user.work }}</td>
+        </tr></a>
+      {% endfor %}
+    </table>
+</div>
+</body>
+</html>
