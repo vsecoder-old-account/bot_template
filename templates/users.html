@@ -56,6 +56,11 @@ table {
   border-collapse: collapse;
 }
 
+.ower {
+  overflow-x: auto;
+  width: 100%;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -106,16 +111,53 @@ th {
   }
 }
 
+input {
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.24);
+  color: white;
+  border: white;
+  border-radius: 7px;
+  width: 50%;
+}
+
+button {
+  color: white;
+  background: rgba(0, 0, 0, 0.24);
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.50);
+}
+
+button:active {
+  background: rgba(0, 0, 0, 0.99);
+}
+
+.searching {
+  display: flex;
+  align-items: center;
+}
+
 </style>
 <div class="header">
   <h2><a href="/"><b>Bot</b></a> <span>></span> Users </h2>
 </div>
 <div class="container">
-    <table>
+    <div class="searching">
+      <input type="text" placeholder="Поиск..." id="input">
+      <button><i class='bx bx-search-alt' onclick="javascript: FindOnPage('text-to-find',true); return false;" id="sss"></i></button>
+    </div>
+    <div class="ower"><table id="table">
       <tr class="tablehead">
         <th>ID</th>
         <th>Имя</th>
         <th>Фамилия</th>
+        <th>Username</th>
         <th>data</th>
         <th>Первый запуск</th>
       </tr>
@@ -124,11 +166,62 @@ th {
             <td>{{ user.id }}</td>
             <td>{{ user.name }}</td>
             <td>{{ user.fullname }}</td>
+            <td>{{ user.username }}</td>
             <td>{{ user.data }}</td>
             <td>{{ user.work }}</td>
         </tr></a>
       {% endfor %}
-    </table>
+    </table></div>
 </div>
+<script>
+var input,search,pr,result,result_arr, locale_HTML, result_store;
+
+function func() {
+ 	locale_HTML = document.body.innerHTML;
+}
+setTimeout(func, 1000);
+
+function FindOnPage(name, status) {
+	input = document.querySelector('#input').value;
+	
+	if(input.length<3&&status==true)
+	{
+		alert('Для поиска вы должны ввести три или более символов');
+		function FindOnPageBack() { document.body.innerHTML = locale_HTML; }
+	}
+	
+	if(input.length>=3)
+	{
+		function FindOnPageGo() {
+
+			search = '/'+input+'/g';
+			pr = document.body.innerHTML;
+			result = pr.match(/>(.*?)</g);
+			result_arr = [];
+
+			var warning = true;
+			for(var i=0;i<result.length;i++) {
+				if(result[i].match(eval(search))!=null) {
+					warning = false;
+				}
+			}
+			if(warning == true) {
+				alert('Не найдено ни одного совпадения');
+			}
+
+			for(var i=0; i<result.length;i++) {
+				result_arr[i] = result[i].replace(eval(search), '<span style="background: rgba(0, 0, 0, 0.24);">'+input+'</span>'); //находим нужные элементы, задаем стиль и сохраняем в новый массив
+			}
+			for(var i=0; i<result.length;i++) {
+				pr=pr.replace(result[i],result_arr[i])
+			}
+			document.body.innerHTML = pr;
+		}
+	}
+	function FindOnPageBack() { document.body.innerHTML = locale_HTML; }
+	if(status) { FindOnPageBack(); FindOnPageGo(); }
+	if(!status) { FindOnPageBack(); }
+}
+</script>
 </body>
 </html>

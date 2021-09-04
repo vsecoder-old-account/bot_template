@@ -128,6 +128,28 @@ h3 {
   }
 }
 
+.popup {
+  display: none;
+  position: fixed;
+  width: 70%;
+  height: 40%;
+  top: 15%;
+  left: 15%;
+  padding: 10px;
+  border-radius: 15px;
+  background: rgb(0 0 0 / 99%);
+}
+
+.popup-btn {
+  cursor: pointer;
+}
+
+#emoji-button {
+  font-size: 25px;
+  display: inline-block;
+  margin-top: -195px;
+  margin-left: 95%;
+}
 </style>
 <div class="header">
   <h2><a href="/"><b>Bot</b></a> <span>></span> Ad </h2>
@@ -135,12 +157,38 @@ h3 {
 <div class="container">
   <div class="segment">
     <form action="/send">
-      <h3>Текст рекламы:</h3>
-      <textarea name="text">Поддерживаем HTML</textarea>
+      <h3>Текст рекламы:</h3><i class='bx bx-help-circle popup-btn' onclick="open_popup()"></i>
+      <textarea name="text" placeholder="Реклама ..."></textarea><div id="emoji-button"></div>
       <br>
       <button type="submit">Send</button>
     </form>
   </div>
 </div>
+<div class="popup">
+  <h3>Доступные html теги:</h3>
+  <p>&lt;b>bold&lt;/b>, &lt;strong>bold&lt;/strong> - жирный текст</p>
+  <p>&lt;i>italic&lt;/i>, &lt;em>italic&lt;/em> - курсив</p>
+  <p>&lt;a href="https://example.com">inline URL&lt;/a> - ссылка</p>
+  <p>&lt;a href="tg://user?id=123456789">inline mention of a user&lt;/a> - упоминание</p>
+</div>
+<script>
+  function open_popup() {
+    if (document.querySelector('.popup').style.display == 'none') {
+      document.querySelector('.popup').style.display = 'block'
+    } else if (document.querySelector('.popup').style.display == 'block') {
+      document.querySelector('.popup').style.display = 'none'
+    } else {
+      document.querySelector('.popup').style.display = 'block'
+    }
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/emoji-button@0.6.0/dist/index.min.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    EmojiButton(document.querySelector('#emoji-button'), function (emoji) {
+      document.querySelector('input').value += emoji;
+    });
+  });
+</script>
 </body>
 </html>

@@ -67,6 +67,6 @@ def server_error(error):
 
 if __name__ != '__main__':
 	print_log(f"Web starting in 0.0.0.0:5000", 'INFO', 'WEB')
-	port = int(os.environ.get("PORT", 3000))
+	port = int(os.environ.get("PORT", 5000))
 	app.run(host='0.0.0.0', port=port)
 	print_log(f"Web stoping", 'INFO', 'WEB')

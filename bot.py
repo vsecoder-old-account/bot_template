@@ -30,7 +30,7 @@ x = threading.Thread(target=web)
 x.start()
 
 # Logging
-from scripts.checks import print_log
+from scripts.checks import async_print_log, print_log
 
 # Time
 import datetime
@@ -71,9 +71,13 @@ async def send_welcome(message: types.Message):
 		name = message.from_user.first_name
 		url = message.from_user.username
 		iduser = message.from_user.id
-		message.from_user.last_name = '-'
+		fullname = '-'
 		if message.from_user.last_name != None:
 			fullname = message.from_user.last_name
+
+		username = '-'
+		if message.from_user.username != None:
+			username = f'@{message.from_user.username}'
         
 		now = datetime.datetime.now()
 		user = User(
@@ -81,12 +85,13 @@ async def send_welcome(message: types.Message):
 			name=name,
             fullname=fullname,
 			data='[{}]',
+            username=username,
             work=now.strftime("%d-%m-%Y %H:%M")
 		)
 		session.add(user)
 		session.commit()
 		await bot.send_message(message.chat.id, '''text''', parse_mode="HTML")
-		print_log(f"New user ID:{iduser} {name}", 'INFO', 'BOT')
+		await async_print_log(f"New user ID:{iduser} {name}", 'INFO', 'BOT')
 	else:
 		await bot.send_message(message.chat.id, 'text')
 
@@ -100,7 +105,7 @@ async def check(message: types.Message):
 	except BaseException as e:
 		await bot.send_message(1218845111, 'В системе ошибка...\n<code>' + str(e) + '</code>', parse_mode='html')
 		await bot.send_message(message.chat.id, 'Упс, ошибка...')
-		print_log(f"Error: {e}", 'ERROR', 'BOT')
+		await async_print_log(f"Error: {e}", 'ERROR', 'BOT')
 
 @dp.message_handler(state=States.STATE_0)
 async def state_case_met1(message: types.Message):
@@ -119,7 +124,7 @@ async def ad_send(text):
 			have = have + 1
 	except Exception:
 		pass
-	print_log(f"Ad sending {have}!", 'INFO', 'BOT')
+	await async_print_log(f"Ad sending {have}!", 'INFO', 'BOT')
 	return have
 
 if __name__ == "__main__":

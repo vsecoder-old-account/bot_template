@@ -1,0 +1,4 @@
+04-09-2021 14:09: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+04-09-2021 14:43: - BOT:[INFO] - Bot starting
+04-09-2021 14:43: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+04-09-2021 14:43: - BOT:[INFO] - Bot stoping

@@ -8,5 +8,6 @@ class User(SqlAlchemyBase):
                    primary_key=True, autoincrement=True)
     name = sa.Column(sa.String, nullable=True)
     fullname = sa.Column(sa.String, nullable=True)
+    username = sa.Column(sa.String, nullable=True)
     data = sa.Column(sa.String, autoincrement=True)
     work = sa.Column(sa.String, autoincrement=True)

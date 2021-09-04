@@ -17,6 +17,7 @@ def get_users():
 			"id": user.id,
 			"name": user.name,
 			"fullname": user.fullname,
+			"username": user.username,
 			"data": user.data,
 			"work": user.work
 		}
@@ -57,6 +58,19 @@ def get_log_file(file):
 		return 'File not found'
 
 def print_log(msg, status, app):
+	text = f'{datetime.datetime.now().strftime("%d-%m-%Y %H:%M")}: - {app}:[{status}] - {msg}\n'
+
+	try:
+		f = open(f'logs//LOG-{datetime.datetime.now().strftime("%d-%m-%Y")}.txt', "a")
+		f.write(text)
+		f.close()
+	except:
+		f = open(f'logs//LOG-{datetime.datetime.now().strftime("%d-%m-%Y")}.txt', "w")
+		f.write(text)
+		f.close()
+	print(text)
+
+async def async_print_log(msg, status, app):
 	text = f'{datetime.datetime.now().strftime("%d-%m-%Y %H:%M")}: - {app}:[{status}] - {msg}\n'
 
 	try:

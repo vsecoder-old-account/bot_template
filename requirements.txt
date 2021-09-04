@@ -3,3 +3,4 @@ aiohttp
 aiogram
 sqlalchemy
 requests
+asyncio
