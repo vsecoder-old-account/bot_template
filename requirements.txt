@@ -1,5 +1,5 @@
 flask
-flask_login
+aiohttp
+aiogram
 sqlalchemy
-memory_profiler
 requests
