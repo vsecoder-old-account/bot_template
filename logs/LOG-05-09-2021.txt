@@ -1,0 +1,153 @@
+05-09-2021 12:30: - BOT:[INFO] - Bot starting
+05-09-2021 12:30: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 12:32: - BOT:[INFO] - Bot stoping
+05-09-2021 12:35: - BOT:[INFO] - Bot starting
+05-09-2021 12:35: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 12:36: - BOT:[INFO] - Bot stoping
+05-09-2021 12:36: - BOT:[INFO] - Bot starting
+05-09-2021 12:36: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 12:39: - WEB:[INFO] - Page: "/" | 192.168.99.11
+05-09-2021 12:39: - WEB:[INFO] - Page: "/users" | 192.168.99.11
+05-09-2021 12:40: - BOT:[INFO] - Bot stoping
+05-09-2021 12:40: - BOT:[INFO] - Bot starting
+05-09-2021 12:40: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 12:41: - BOT:[INFO] - Bot stoping
+05-09-2021 12:41: - BOT:[INFO] - Bot starting
+05-09-2021 12:41: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 12:41: - BOT:[INFO] - Bot stoping
+05-09-2021 12:41: - BOT:[INFO] - Bot starting
+05-09-2021 12:41: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 12:42: - BOT:[INFO] - Bot stoping
+05-09-2021 12:42: - BOT:[INFO] - Bot starting
+05-09-2021 12:42: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 12:47: - BOT:[INFO] - Bot stoping
+05-09-2021 12:47: - BOT:[INFO] - Bot starting
+05-09-2021 12:47: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 12:47: - BOT:[INFO] - Bot stoping
+05-09-2021 12:47: - BOT:[INFO] - Bot starting
+05-09-2021 12:47: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 12:47: - BOT:[INFO] - Bot stoping
+05-09-2021 12:47: - BOT:[INFO] - Bot starting
+05-09-2021 12:47: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 12:50: - BOT:[INFO] - Bot stoping
+05-09-2021 12:50: - BOT:[INFO] - Bot starting
+05-09-2021 12:50: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 12:53: - BOT:[INFO] - Bot stoping
+05-09-2021 13:01: - BOT:[INFO] - Bot starting
+05-09-2021 13:01: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 13:15: - BOT:[INFO] - Bot stoping
+05-09-2021 13:46: - BOT:[INFO] - Bot starting
+05-09-2021 13:46: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 13:46: - WEB:[INFO] - Page: "/" | 192.168.99.11
+05-09-2021 13:46: - WEB:[INFO] - Page: "/users" | 192.168.99.11
+05-09-2021 13:47: - BOT:[INFO] - Bot stoping
+05-09-2021 13:47: - BOT:[INFO] - Bot starting
+05-09-2021 13:47: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 13:47: - WEB:[INFO] - Page: "/" | 192.168.99.11
+05-09-2021 13:47: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 13:47: - BOT:[INFO] - Bot stoping
+05-09-2021 13:47: - BOT:[INFO] - Bot starting
+05-09-2021 13:47: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 13:47: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 13:48: - BOT:[INFO] - Bot starting
+05-09-2021 13:48: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 13:48: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 13:48: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 13:48: - WEB:[ERROR] - 500
+05-09-2021 13:48: - BOT:[INFO] - Bot stoping
+05-09-2021 13:48: - BOT:[INFO] - Bot starting
+05-09-2021 13:48: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 13:48: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 13:48: - WEB:[ERROR] - 500
+05-09-2021 13:52: - BOT:[INFO] - Bot stoping
+05-09-2021 13:57: - BOT:[INFO] - Bot starting
+05-09-2021 13:57: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 13:57: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 13:57: - WEB:[ERROR] - 500
+05-09-2021 13:57: - BOT:[INFO] - Bot stoping
+05-09-2021 13:57: - BOT:[INFO] - Bot starting
+05-09-2021 13:57: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 13:57: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 13:57: - WEB:[ERROR] - 500
+05-09-2021 13:59: - BOT:[INFO] - Bot stoping
+05-09-2021 13:59: - BOT:[INFO] - Bot starting
+05-09-2021 13:59: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 13:59: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 13:59: - WEB:[ERROR] - 500
+05-09-2021 13:59: - WEB:[INFO] - Page: "/" | 192.168.99.11
+05-09-2021 13:59: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 13:59: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 13:59: - WEB:[ERROR] - 500
+05-09-2021 14:02: - BOT:[INFO] - Bot stoping
+05-09-2021 14:02: - BOT:[INFO] - Bot starting
+05-09-2021 14:02: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 14:02: - WEB:[INFO] - Page: "/" | 192.168.99.11
+05-09-2021 14:02: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 14:02: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 14:02: - WEB:[ERROR] - 500
+05-09-2021 14:04: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 14:04: - WEB:[ERROR] - 500
+05-09-2021 14:07: - BOT:[INFO] - Bot stoping
+05-09-2021 14:08: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 14:08: - BOT:[INFO] - Bot starting
+05-09-2021 14:08: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 14:08: - WEB:[ERROR] - 500
+05-09-2021 14:09: - BOT:[INFO] - Bot stoping
+05-09-2021 14:09: - BOT:[INFO] - Bot starting
+05-09-2021 14:09: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 14:09: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 14:09: - WEB:[ERROR] - 500
+05-09-2021 14:13: - BOT:[INFO] - Bot stoping
+05-09-2021 14:13: - BOT:[INFO] - Bot starting
+05-09-2021 14:13: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 14:13: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 14:13: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 14:13: - BOT:[INFO] - Bot stoping
+05-09-2021 14:13: - BOT:[INFO] - Bot starting
+05-09-2021 14:13: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 14:13: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 14:13: - WEB:[ERROR] - 500
+05-09-2021 14:14: - BOT:[INFO] - Bot stoping
+05-09-2021 14:14: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 14:14: - BOT:[INFO] - Bot starting
+05-09-2021 14:15: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 14:15: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 14:16: - BOT:[INFO] - Bot stoping
+05-09-2021 14:16: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 14:16: - BOT:[INFO] - Bot starting
+05-09-2021 14:16: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 14:16: - BOT:[INFO] - Bot stoping
+05-09-2021 14:16: - BOT:[INFO] - Bot starting
+05-09-2021 14:16: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 14:16: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 14:17: - BOT:[INFO] - Bot stoping
+05-09-2021 14:17: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 14:17: - BOT:[INFO] - Bot starting
+05-09-2021 14:17: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 14:17: - WEB:[ERROR] - 500
+05-09-2021 14:18: - BOT:[INFO] - Bot stoping
+05-09-2021 14:25: - BOT:[INFO] - Bot starting
+05-09-2021 14:25: - BOT:[INFO] - Bot stoping
+05-09-2021 14:25: - BOT:[INFO] - Bot starting
+05-09-2021 14:25: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 14:25: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 14:25: - WEB:[INFO] - Page: "/" | 192.168.99.11
+05-09-2021 14:25: - BOT:[INFO] - Bot stoping
+05-09-2021 14:25: - BOT:[INFO] - Bot starting
+05-09-2021 14:25: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 14:25: - WEB:[INFO] - Page: "/" | 192.168.99.11
+05-09-2021 14:25: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 14:25: - WEB:[INFO] - Page: "/login" | 192.168.99.11
+05-09-2021 14:25: - WEB:[INFO] - Page: "/" | 192.168.99.11
+05-09-2021 14:25: - WEB:[INFO] - Page: "/users" | 192.168.99.11
+05-09-2021 14:25: - WEB:[WARNING] - 404
+05-09-2021 14:25: - BOT:[INFO] - Bot stoping
+05-09-2021 14:25: - BOT:[INFO] - Bot starting
+05-09-2021 14:25: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 14:25: - WEB:[INFO] - Page: "/" | 192.168.99.11
+05-09-2021 14:26: - WEB:[INFO] - Page: "/users" | 192.168.99.11
+05-09-2021 14:26: - WEB:[INFO] - Page: "/" | 192.168.99.11
+05-09-2021 14:26: - BOT:[INFO] - Bot stoping
+05-09-2021 14:26: - BOT:[INFO] - Bot starting
+05-09-2021 14:26: - WEB:[INFO] - Web starting in 0.0.0.0:5000
+05-09-2021 14:26: - WEB:[INFO] - Page: "/" | 192.168.99.11

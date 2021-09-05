@@ -88,19 +88,30 @@ h3 {
 }
 
 </style>
+{% if authenticated %}
 <div class="header">
   <h2><a href="/"><b>Bot</b></a> <span>></span> Main page </h2>
 </div>
 <div class="container">
   <a href="/users"><div class="segment">
-    <h3>Пользователей: {{ users }}</h3> <i class="bx bx-user"></i>
+    <h3>Пользователей: {{ users }}</h3> <i class="bx bx-user bx-tada-hover"></i>
   </div></a>
   <a href="/ad"><div class="segment">
-    <h3>Публикация рекламы</h3> <i class="bx bx-support"></i>
+    <h3>Публикация рекламы</h3> <i class="bx bx-support bx-tada-hover"></i>
   </div></a>
   <a href="/logs"><div class="segment">
-    <h3>Логи</h3> <i class='bx bx-notepad'></i>
+    <h3>Логи</h3> <i class='bx bx-notepad bx-tada-hover'></i>
   </div></a>
 </div>
+{% else %}
+<div class="header">
+  <h2><a href="/"><b>Bot</b></a> <span>></span> Main page </h2>
+</div>
+<div class="container">
+  <a href="/login"><div class="segment">
+    <h3>Войдите чтобы продолжить</h3> <i class='bx bx-log-in bx-tada-hover'></i>
+  </div></a>
+</div>
+{% endif %}
 </body>
 </html>

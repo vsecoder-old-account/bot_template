@@ -32,12 +32,14 @@ x.start()
 # Logging
 from scripts.checks import async_print_log, print_log
 
-# Time
-import datetime
+# ...
+import datetime, json
 
 db_session.global_init('database.db')
 
-bot_token = '1409551099:AAH7dlcOfAwITtbWnMsn0HB1mDhP_XXuLG0' # token
+f = open(f'settings.json', "r")
+settings = json.loads(f.read())
+bot_token = settings["token"] # token
 
 bot = Bot(token=bot_token)
 

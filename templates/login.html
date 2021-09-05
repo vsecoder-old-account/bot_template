@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Вход - «StatusPage»</title>
-    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAA////ALm3tQCXk5AAqqekALa0sQCJhYIAeXVxAODg3wDa2dgAysnHAJOQjQB7dXIAdnJuAJeVkgBoY18Aj4uHAPHw7wBuaWUAtLGvAJ2alwDz8vIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBCgMLCwsLCwsLDgkBAQEBARIPDw8PDw8PDw8QAQEBAQEPDw8BDw8PAQ8PBgEBAQEBDw8PDwEBAQ8PDwYBAQEBAQ8PDw8PDw8PDw8GAQEBAQEPDw8BDw8PAQ8PBgEBAQEBDw8PAQ8PDwEPDwYBAQEBAQ8PDw8PDw8PDw8UAQEBAQENDw8MBwQTExMCEQEBAQEBCBQLBRUBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAAAAAAAAAAAAAAAAAAAAAP//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAA=" rel="icon" type="image/x-icon" />
+    <title>Вход</title>
+	<link href="../static/img/icon.png" rel="icon" type="image/png" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -58,12 +58,12 @@ h1{
 	border-bottom-right-radius: 8px;
 	border-bottom-left-radius: 8px;
 }
-#signin  input[type="email"], #signin  input[type="password"], #signin button[type="submit"]{
+#signin  input[type="text"], #signin  input[type="password"], #signin button[type="submit"]{
 	background: rgb(28, 30, 33);
 	box-shadow: inset -100px -100px 0 rgb(28, 30, 33); /*Prevent yellow autofill color*/
 	color: rgb(52, 56, 61);
 }
-#signin  input[type="email"], #signin  input[type="password"]{
+#signin  input[type="text"], #signin  input[type="password"]{
 	position: relative;
 	display: block;
 	width: 280px;
@@ -74,7 +74,7 @@ h1{
 	padding: 0 0 0 20px;
 	font-weight: 700;
 }
-#signin  input[type="email"]:focus, #signin  input[type="password"]:focus{
+#signin  input[type="text"]:focus, #signin  input[type="password"]:focus{
 	color: rgb(255, 255, 255);
 }
 #signin button[type="submit"]{
@@ -126,10 +126,9 @@ h1{
         <spam class="{{ category }}">{{ message }}</spam>
         {% endfor %}
         <form id="signin" method="post" action="" autocomplete="off">
-            <input type="email" id="user" name="user" placeholder="Почта" />
+            <input type="text" id="user" name="user" placeholder="Логин" />
             <input type="password" id="pass" name="pass" placeholder="Пароль" />
             <button type="submit">&#xf0da;</button>
-            <p>Ещё не зарегистрировались? <a href="./register">регистрация</a></p>
         </form>
     </div>
 </body>

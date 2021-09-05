@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Admin Panel</title>
-  <link href="../static/img/icon.png" rel="icon" type="image/png" />
+  <link href="https://boxicons.com/static/svg/solid/bxs-book.svg" rel="icon" type="image/png" />
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -147,6 +147,7 @@ button:active {
 <div class="header">
   <h2><a href="/"><b>Bot</b></a> <span>></span> Users </h2>
 </div>
+{% if authenticated %}
 <div class="container">
     <div class="searching">
       <input type="text" placeholder="Поиск..." id="input">
@@ -223,5 +224,15 @@ function FindOnPage(name, status) {
 	if(!status) { FindOnPageBack(); }
 }
 </script>
+{% else %}
+<div class="header">
+  <h2><a href="/"><b>Bot</b></a> <span>></span> Main page </h2>
+</div>
+<div class="container">
+  <a href="/login"><div class="segment">
+    <h3>Войдите чтобы продолжить</h3> <i class='bx bx-log-in bx-tada-hover'></i>
+  </div></a>
+</div>
+{% endif %}
 </body>
 </html>

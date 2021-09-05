@@ -1,4 +1,4 @@
-import datetime
+import datetime, json
 
 from models import db_session
 from models.users import User
@@ -24,6 +24,14 @@ def get_users():
 		users.append(user_as_dict)
 
 	return users
+
+def check_pass(login, password):
+	f = open(f'settings.json', "r")
+	settings = json.loads(f.read())
+	admin_password = settings["password"] # password
+
+	if admin_password == password:
+		return True
 
 def get_num():
 	session = db_session.create_session()
