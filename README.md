@@ -16,7 +16,7 @@ cd bot-template
 pip install -r requirements.txt
 ```
 
-Замените токен телеграмм бота в файле bot.py на свой и запустите:
+Замените токен телеграмм бота в файле settings.json на свой и запустите:
 
 ```bash
 python bot.py
